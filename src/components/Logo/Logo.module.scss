@@ -4,4 +4,11 @@
 	font-family: $font-special;
 	text-transform: uppercase;
 	font-size: 2.5 * $base-size;
+	margin: 0;
+}
+
+.logo_wrapper h2 {
+	font-weight: 300;
+	font-size: 1.3 * $base-size;
+	margin-top: 0.5em;
 }
