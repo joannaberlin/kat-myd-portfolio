@@ -1,0 +1,15 @@
+@import './settings.scss';
+
+@font-face {
+	font-family: 'Nunito';
+	src: local('Nunito'), url('../fonts/Nunito/Nunito-Light.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
