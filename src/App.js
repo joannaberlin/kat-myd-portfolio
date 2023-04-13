@@ -1,5 +1,7 @@
+import Logo from './components/Logo/Logo';
+
 function App() {
-	return <h2>This is Kat's portfolio</h2>;
+	return <Logo />;
 }
 
 export default App;

@@ -1,0 +1,7 @@
+@import '../../styles/settings.scss';
+
+.logo_wrapper h1 {
+	font-family: $font-special;
+	text-transform: uppercase;
+	font-size: 2.5 * $base-size;
+}
