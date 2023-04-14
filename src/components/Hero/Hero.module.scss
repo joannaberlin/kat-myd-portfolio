@@ -1,0 +1,21 @@
+@import '../../styles/settings.scss';
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.container {
+	display: flex;
+	overflow-x: scroll;
+	width: 100%;
+}
+
+.card {
+	flex-shrink: 0;
+	width: 20vw;
+	height: 60vh;
+	margin-right: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
