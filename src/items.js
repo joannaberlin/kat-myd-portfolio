@@ -1,4 +1,4 @@
-export const items = [
+export const images = [
 	{
 		css: `url(${process.env.PUBLIC_URL}/images/1re-premium.jpg)`,
 	},
