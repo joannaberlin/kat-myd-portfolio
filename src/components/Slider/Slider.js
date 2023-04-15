@@ -58,14 +58,14 @@ const Slider = ({ images, width = 600, visible = 4, style, children }) => {
 	useGesture(
 		{
 			onDrag: ({ event, offset: [x], direction: [dx] }) => {
-				event.preventDefault();
+				// event.preventDefault();
 				if (dx) {
 					dragOffset.current = -x;
 					runSprings(wheelOffset.current + -x, -dx);
 				}
 			},
 			onWheel: ({ event, offset: [, y], direction: [, dy] }) => {
-				event.preventDefault();
+				// event.preventDefault();
 				if (dy) {
 					wheelOffset.current = y;
 					runSprings(dragOffset.current + y, dy);

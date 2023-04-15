@@ -13,7 +13,7 @@ function App() {
 			<Container>
 				<Logo />
 			</Container>
-			<div className={`flex fill center ${styles.container}`}>
+			<section className={`flex fill center ${styles.container}`}>
 				<div className={styles.main}>
 					<Slider images={images} width={400} visible={5}>
 						{({ css }, i) => (
@@ -29,7 +29,7 @@ function App() {
 						)}
 					</Slider>
 				</div>
-			</div>
+			</section>
 			<Container>
 				<Footer />
 			</Container>
