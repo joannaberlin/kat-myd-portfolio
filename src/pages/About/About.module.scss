@@ -1,0 +1,26 @@
+@import '../../styles/settings.scss';
+
+.about_section {
+	padding-top: 20px;
+}
+
+.text_wrapper {
+	width: 60vw;
+	margin: 0;
+	padding: 0;
+}
+
+.text_wrapper p {
+	font-size: 1.3 * $base-size;
+	line-height: 30px;
+}
+
+.textImage_wrapper {
+	display: flex;
+}
+
+.textImage_wrapper img {
+	width: auto;
+	height: 60vh;
+	padding: 0 0 50px 70px;
+}

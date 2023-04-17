@@ -1,0 +1,21 @@
+@import '../../styles/settings.scss';
+
+.list {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+}
+
+.list a {
+	text-decoration: none;
+	color: $color-dark;
+	font-size: 1.2 * $base-size;
+	// font-weight: bold;
+}
+
+.list a:hover,
+.list a.active {
+	text-decoration: underline 1.5px $color-vivid;
+	text-underline-offset: 5px;
+	transition: $transition;
+}

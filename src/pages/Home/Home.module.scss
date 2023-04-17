@@ -11,19 +11,25 @@
 	position: absolute;
 	z-index: 1;
 	margin-left: 20px;
-	margin-top: 60vh;
+	margin-top: 58vh;
 	font-weight: bold;
 }
 
 .descriptionText {
 	font-size: 1.2 * $base-size;
 	text-align: center;
+	margin-top: 20px;
 }
 
 .main {
-	height: 500px;
+	// height: 500px;
+	height: 65vh;
 	width: 100%;
 	overflow-x: hidden;
+
+	@include xxl {
+		height: 600px;
+	}
 }
 
 .content {
@@ -41,6 +47,7 @@
 
 .image {
 	width: auto;
+	// height: 500px;
 	height: 65vh;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -48,5 +55,9 @@
 
 	@include sm {
 		width: 390px;
+	}
+
+	@include xxl {
+		height: 600px;
 	}
 }

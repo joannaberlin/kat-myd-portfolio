@@ -1,6 +1,11 @@
 @import '../../styles/settings.scss';
+@import '../../styles/mixins';
 
 .container {
 	// max-width: 1200px;
 	margin: 30px 20px;
+
+	@include xl {
+		margin: 30px 60px;
+	}
 }

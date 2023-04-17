@@ -25,13 +25,10 @@ const Home = () => {
 			</div>
 			<div className={styles.descriptionText}>
 				<p>
-					Welcome to Kat's Mydlak online portfolio. Here you will find
+					Welcome to online portfolio of Katarzyna Mydlak. Here you will find
 					commercial fashion styling samples and editorial samples.
 				</p>
-				<p>
-					Enjoy browsing and feel free to contact me for a collaboration
-					projects.
-				</p>
+				<p>Enjoy browsing and feel free to contact me for a collaboration.</p>
 			</div>
 		</section>
 	);
