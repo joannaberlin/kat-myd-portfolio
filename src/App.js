@@ -1,40 +1,37 @@
-import Logo from './components/Logo/Logo';
-import Container from './components/Container/Container';
-import Footer from './components/Footer/Footer';
-import Slider from './components/Slider/Slider';
-import { a } from '@react-spring/web';
-import { images } from './items';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import styles from './styles.module.scss';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Portfolio from './pages/Portfolio/Portfolio';
+import RootLayout from './pages/RootLayout/RootLayout';
+import Error from './pages/Error/Error';
+
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <RootLayout />,
+		errorElement: <Error />,
+		children: [
+			{ index: true, element: <Home /> },
+			{
+				path: 'about',
+				element: <About />,
+			},
+			{
+				path: 'contact',
+				element: <Contact />,
+			},
+			{
+				path: 'portfolio',
+				element: <Portfolio />,
+			},
+		],
+	},
+]);
 
 function App() {
-	return (
-		<>
-			<Container>
-				<Logo />
-			</Container>
-			<section className={`flex fill center ${styles.container}`}>
-				<div className={styles.main}>
-					<Slider images={images} width={400} visible={5}>
-						{({ css }, i) => (
-							<div className={styles.content}>
-								<div className={styles.marker}>
-									{String(i).padStart(2, '0')}
-								</div>
-								<a.div
-									className={styles.image}
-									style={{ backgroundImage: css }}
-								/>
-							</div>
-						)}
-					</Slider>
-				</div>
-			</section>
-			<Container>
-				<Footer />
-			</Container>
-		</>
-	);
+	return <RouterProvider router={router} />;
 }
 
 export default App;

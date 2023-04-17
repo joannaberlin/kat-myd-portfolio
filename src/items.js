@@ -1,6 +1,6 @@
 export const images = [
 	{
-		css: `url(${process.env.PUBLIC_URL}/images/slider/1-zodiak.jpg)`,
+		css: `url(${process.env.PUBLIC_URL}/images/slider/7-bankowiec.jpg)`,
 	},
 	{
 		css: `url(${process.env.PUBLIC_URL}/images/slider/2-bl-wh.jpg)`,
@@ -18,7 +18,7 @@ export const images = [
 		css: `url(${process.env.PUBLIC_URL}/images/slider/6-zodiak.jpg)`,
 	},
 	{
-		css: `url(${process.env.PUBLIC_URL}/images/slider/7-bankowiec.jpg)`,
+		css: `url(${process.env.PUBLIC_URL}/images/slider/1-zodiak.jpg)`,
 	},
 	{
 		css: `url(${process.env.PUBLIC_URL}/images/slider/8-re-prem.jpg)`,

@@ -1,0 +1,52 @@
+@import '../../styles/settings.scss';
+@import '../../styles/mixins';
+
+.container {
+	background: $color-light;
+	z-index: 0;
+}
+
+.imagesText {
+	color: $color-vivid;
+	position: absolute;
+	z-index: 1;
+	margin-left: 20px;
+	margin-top: 60vh;
+	font-weight: bold;
+}
+
+.descriptionText {
+	font-size: 1.2 * $base-size;
+	text-align: center;
+}
+
+.main {
+	height: 500px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.content {
+	width: 400px;
+	height: 100%;
+}
+
+.marker {
+	color: $color-vivid;
+	position: absolute;
+	top: 0px;
+	left: 140px;
+	font-family: monospace;
+}
+
+.image {
+	width: auto;
+	height: 65vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	@include sm {
+		width: 390px;
+	}
+}

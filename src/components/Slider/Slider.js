@@ -2,7 +2,7 @@ import React, { useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
 import { useSprings, a } from '@react-spring/web';
 
-// import styles from './Slider.module.scss';
+import styles from './Slider.module.scss';
 
 const stylesInline = {
 	container: {
@@ -76,7 +76,11 @@ const Slider = ({ images, width = 600, visible = 4, style, children }) => {
 	);
 
 	return (
-		<div ref={target} style={{ ...style, ...stylesInline.container }}>
+		<div
+			ref={target}
+			style={{ ...style, ...stylesInline.container }}
+			className={styles.images_wrapper}
+		>
 			{springs.map(({ x }, i) => (
 				<a.div
 					key={i}
