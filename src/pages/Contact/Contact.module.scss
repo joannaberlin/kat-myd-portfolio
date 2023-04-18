@@ -1,7 +1,13 @@
 @import '../../styles/settings.scss';
+@import '../../styles/mixins';
 
 .section {
-	padding-top: 20px;
+	// padding-top: 20px;
+	height: 55vh;
+
+	@include sm {
+		padding-top: 20px;
+	}
 }
 
 .contactDetails_wrapper {

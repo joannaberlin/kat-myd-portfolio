@@ -14,10 +14,12 @@ const RootLayout = () => {
 					<Logo />
 					<Navbar />
 				</header>
-				<Footer />
 			</Container>
 			<main>
 				<Outlet />
+				<Container>
+					<Footer />
+				</Container>
 			</main>
 		</>
 	);

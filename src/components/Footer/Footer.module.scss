@@ -1,6 +1,20 @@
 @import '../../styles/settings.scss';
+@import '../../styles/mixins';
 
 .footer_wrapper {
-	position: absolute;
-	bottom: 0;
+	vertical-align: bottom;
+
+	@include sm {
+		position: absolute;
+		bottom: 0;
+		visibility: visible;
+	}
+}
+
+.footer_wrapper p {
+	font-size: $base-size;
+
+	@include xl {
+		font-size: 1.1 * $base-size;
+	}
 }
