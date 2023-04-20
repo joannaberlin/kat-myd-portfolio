@@ -67,8 +67,8 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 
-	@include lg {
-		width: 395px;
+	@include md {
+		width: 195px;
 	}
 
 	@include lg {

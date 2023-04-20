@@ -2,12 +2,14 @@
 @import '../../styles/mixins';
 
 .footer_wrapper {
-	vertical-align: bottom;
+	position: fixed;
+	bottom: 0;
+	background-color: $color-light;
+	width: 100vw;
+	padding-top: 8px;
 
 	@include sm {
-		position: absolute;
-		bottom: 0;
-		visibility: visible;
+		background-color: transparent;
 	}
 }
 

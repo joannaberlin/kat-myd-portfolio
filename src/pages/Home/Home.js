@@ -9,7 +9,7 @@ const Home = () => {
 	console.log(window.innerWidth);
 	const windowWidth = window.innerWidth;
 
-	if (windowWidth < 576) {
+	if (windowWidth <= 576) {
 		return (
 			<Container>
 				<section className={styles.images_section}>
@@ -70,7 +70,7 @@ const Home = () => {
 		);
 	}
 
-	if (windowWidth > 768) {
+	if (windowWidth >= 992) {
 		return (
 			<section>
 				<p className={styles.imagesText}>
