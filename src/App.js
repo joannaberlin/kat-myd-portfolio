@@ -6,6 +6,7 @@ import Contact from './pages/Contact/Contact';
 import Portfolio from './pages/Portfolio/Portfolio';
 import RootLayout from './pages/RootLayout/RootLayout';
 import Error from './pages/Error/Error';
+import Project from './pages/Project/Project';
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
 			{
 				path: 'portfolio',
 				element: <Portfolio />,
+			},
+			{
+				path: 'portfolio/:projectId',
+				element: <Project />,
 			},
 		],
 	},
