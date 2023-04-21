@@ -13,12 +13,14 @@ const Portfolio = () => {
 						to={'/portfolio/' + project.projectId}
 						className={styles.imageLink}
 					>
-						<img
-							key={i}
-							src={project.images[0].url}
-							alt={project.images[0].alt}
-							className={styles.image}
-						></img>
+						<div className={styles.image_wrapper}>
+							<img
+								key={i}
+								src={project.images[0].url}
+								alt={project.images[0].alt}
+								className={styles.image}
+							></img>
+						</div>
 					</Link>
 				))}
 			</section>

@@ -7,10 +7,11 @@
 	background-color: $color-light;
 	width: 100vw;
 	padding-top: 8px;
+	z-index: 5;
 
-	@include sm {
-		background-color: transparent;
-	}
+	// @include sm {
+	// 	background-color: transparent;
+	// }
 }
 
 .footer_wrapper p {
