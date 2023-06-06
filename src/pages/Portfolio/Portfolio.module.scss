@@ -4,13 +4,25 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
+	z-index: 1;
 }
 
 .image {
 	max-width: 100%;
-	// max-height: 100%;
 	object-fit: cover;
+
+	&:hover::after {
+		content: 'Hello';
+		position: absolute;
+		top: 92.5px;
+		left: 50%;
+		width: 75px;
+		height: 75px;
+		line-height: 75px;
+		z-index: 10;
+		transform: translate(-50%, 100%);
+	}
 }
 
 .image_wrapper {
@@ -25,7 +37,7 @@
 		background-color: $color-dark;
 		width: 100%;
 		height: 100%;
-		opacity: 0.3;
+		opacity: 0.4;
 		position: absolute;
 		transition: $transition;
 		cursor: pointer;
@@ -34,4 +46,27 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
+	&:hover .text_wrapper {
+		visibility: visible;
+		z-index: 3;
+		transition: $transition;
+	}
+}
+
+.text_wrapper {
+	color: $color-vivid;
+	font-size: 1.6 * $base-size;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	visibility: hidden;
+}
+
+.text_wrapper p:first-child {
+	font-size: 1.2 * $base-size;
 }

@@ -2,6 +2,7 @@ import Container from '../../components/Container/Container';
 import { imagesAll } from '../../items';
 import { Link } from 'react-router-dom';
 import styles from './Portfolio.module.scss';
+import ShortUniqueId from 'short-unique-id';
 
 const Portfolio = () => {
 	return (
@@ -9,7 +10,7 @@ const Portfolio = () => {
 			<section className={styles.images_wrapper}>
 				{imagesAll.map((project, i) => (
 					<Link
-						key={project.projectId}
+						key={i}
 						to={'/portfolio/' + project.projectId}
 						className={styles.imageLink}
 					>
@@ -20,6 +21,10 @@ const Portfolio = () => {
 								alt={project.images[0].alt}
 								className={styles.image}
 							></img>
+							<div className={styles.text_wrapper}>
+								<p>{project.projectName}</p>
+								<p>Discover More</p>
+							</div>
 						</div>
 					</Link>
 				))}

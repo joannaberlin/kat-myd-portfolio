@@ -69,6 +69,7 @@ export const images = [
 export const imagesAll = [
 	{
 		projectId: 1,
+		projectName: 'Project 1',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/1-session/1-1.jpg)`,
@@ -154,6 +155,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 2,
+		projectName: 'Zodiak',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/2-session/2-1.jpg)`,
@@ -299,6 +301,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 3,
+		projectName: 'Gdynia Bankowiec',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/3-session/3-1.jpg)`,
@@ -429,6 +432,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 4,
+		projectName: 'Reserved Premium',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/4-session/4-1.jpg)`,
@@ -494,6 +498,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 5,
+		projectName: 'Reserved',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/5-session/5-1.jpg)`,
@@ -629,6 +634,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 6,
+		projectName: 'Project 6',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/6-session/6-1.jpg)`,
@@ -654,6 +660,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 7,
+		projectName: 'Project 7',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/7-session/7-1.jpg)`,
@@ -709,6 +716,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 8,
+		projectName: 'Project 8',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/8-session/8-1.jpg)`,
@@ -744,6 +752,7 @@ export const imagesAll = [
 	},
 	{
 		projectId: 9,
+		projectName: 'Project 9',
 		images: [
 			{
 				css: `url(${process.env.PUBLIC_URL}/images/portfolio/9-session/9-1.jpg)`,
