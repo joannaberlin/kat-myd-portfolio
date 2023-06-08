@@ -3,34 +3,23 @@
 .images_wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	margin-bottom: 60px;
 	z-index: 1;
 }
 
 .image {
-	max-width: 100%;
+	width: 20vw;
+	height: 400px;
 	object-fit: cover;
-
-	&:hover::after {
-		content: 'Hello';
-		position: absolute;
-		top: 92.5px;
-		left: 50%;
-		width: 75px;
-		height: 75px;
-		line-height: 75px;
-		z-index: 10;
-		transform: translate(-50%, 100%);
-	}
 }
 
 .image_wrapper {
-	width: 22vw;
-	height: 55vh;
+	height: 400px;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 10px;
+	margin: 3px;
 
 	&:hover::after {
 		content: '';

@@ -2,7 +2,6 @@ import Container from '../../components/Container/Container';
 import { imagesAll } from '../../items';
 import { Link } from 'react-router-dom';
 import styles from './Portfolio.module.scss';
-import ShortUniqueId from 'short-unique-id';
 
 const Portfolio = () => {
 	return (
