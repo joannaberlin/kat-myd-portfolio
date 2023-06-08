@@ -15,8 +15,9 @@
 	font-weight: bold;
 
 	@include lg {
-		margin-left: 20px;
+		margin-left: 43vw;
 		margin-top: 58vh;
+		font-size: 1.3 * $base-size;
 	}
 }
 
