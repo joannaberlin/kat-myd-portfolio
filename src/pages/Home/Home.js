@@ -6,7 +6,6 @@ import Container from '../../components/Container/Container';
 import styles from './Home.module.scss';
 
 const Home = () => {
-	console.log(window.innerWidth);
 	const windowWidth = window.innerWidth;
 
 	if (windowWidth <= 576) {
@@ -21,21 +20,7 @@ const Home = () => {
 							className={styles.imageMobile}
 						></img>
 					))}
-					{/* <img
-						src={`${process.env.PUBLIC_URL}/images/slider/7-bankowiec.jpg`}
-						alt='test'
-					/> */}
 				</section>
-				{/* <footer className={styles.footerMobile}>
-					<a
-						href='https://www.instagram.com/kasia_mydlak_fashion_stylist/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<i className='fa fa-instagram' />
-					</a>
-					<p>Kat Mydlak, copyright 2023</p>
-				</footer> */}
 			</Container>
 		);
 	}
