@@ -1,7 +1,20 @@
 @import '../../styles/settings.scss';
+@import '../../styles/mixins';
 
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.logoRoot_wrapper {
+	display: none;
+
+	@include sm {
+		display: block;
+	}
+}
+
+.navbarRoot_wrapper {
+	width: 350px;
 }

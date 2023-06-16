@@ -11,8 +11,12 @@ const RootLayout = () => {
 		<>
 			<Container>
 				<header className={styles.header}>
-					<Logo />
-					<Navbar />
+					<div className={styles.logoRoot_wrapper}>
+						<Logo />
+					</div>
+					<div className={styles.navbarRoot_wrapper}>
+						<Navbar />
+					</div>
 				</header>
 			</Container>
 			<main>

@@ -1,16 +1,20 @@
 @import '../../styles/settings.scss';
+@import '../../styles/mixins';
 
 .list {
-	display: flex;
+	display: none;
 	gap: 2rem;
 	list-style: none;
+
+	@include sm {
+		display: flex;
+	}
 }
 
 .list a {
 	text-decoration: none;
 	color: $color-dark;
 	font-size: 1.2 * $base-size;
-	// font-weight: bold;
 }
 
 .list a:hover,
@@ -18,4 +22,129 @@
 	text-decoration: underline 1.5px $color-vivid;
 	text-underline-offset: 5px;
 	transition: $transition;
+}
+
+.burger {
+	display: block;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	@include sm {
+		display: none;
+	}
+}
+
+.burgerLogo_wrapper {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	width: 90vw;
+}
+
+.logo_wrapper {
+	@include sm {
+		display: none;
+	}
+}
+
+.line {
+	height: 2px;
+	width: 35px;
+	margin: 0.5rem 0;
+	background: $color-dark;
+	transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+.navMobile {
+	background-color: $color-light;
+	height: 100vh;
+	width: 90vw;
+	z-index: 99;
+	opacity: 0;
+	animation: 1.5s appear forwards;
+}
+
+.list_burger {
+	display: flex;
+	flex-direction: column;
+}
+
+.navLink_burger {
+	text-decoration: none;
+	color: $color-dark;
+	font-size: 2.5 * $base-size;
+	padding-top: 40px;
+
+	&:hover {
+		color: $color-vivid;
+		transition: $transition;
+	}
+}
+
+.closeButton {
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.closeButton::before,
+.closeButton::after {
+	content: '';
+	width: 2px;
+	height: 100%;
+	background: $color-dark;
+	display: block;
+	transform: rotate(45deg) translateX(0px);
+	position: absolute;
+	left: 50%;
+	top: 0;
+}
+
+.closeButton::after {
+	transform: rotate(-45deg) translateX(0px);
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(-2%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes shrink {
+	0% {
+		width: 95%;
+	}
+	100% {
+		width: 90%;
+	}
 }
